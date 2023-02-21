@@ -136,7 +136,7 @@ func queryAddOperation(ctx context.Context, db *sql.DB, Nueva Operation, Resulta
 }
 
 func createConection() (*sql.DB, error) {
-	connectionString := "root:123@tcp(DBmysql)/db_calculadora?parseTime=True"
+	connectionString := "root:123@tcp(DBmysql:3306)/db_calculadora?parseTime=True"
 	db, err := sql.Open("mysql", connectionString)
 	if err != nil {
 		panic(err)
