@@ -65,7 +65,7 @@ func DoOperacion(w http.ResponseWriter, req *http.Request) {
 	b := []byte("")
 	dt := time.Now()
 	if ScriptResult.Error == "" {
-		b = []byte(fmt.Sprintf("%v", Operacion.Num1) + "," + fmt.Sprintf("%v", Operacion.Num2) + "," + fmt.Sprintf("%v", Operacion.Operacion) + "," + fmt.Sprintf("%v", ScriptResult.Resultado) + "," + dt.String())
+		b = []byte(fmt.Sprintf("%v", Operacion.Num1) + "," + fmt.Sprintf("%v", Operacion.Num2) + "," + fmt.Sprintf("%v", Operacion.Operacion) + "," + fmt.Sprintf("%v", ScriptResult.Resultado) + "," + dt.String() + "\n")
 	} else {
 		b = []byte(ScriptResult.Error)
 	}

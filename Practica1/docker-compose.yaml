@@ -23,6 +23,8 @@ services:
       - mysql
     links:
       - mysql
+    volumes:
+      - ./logs:/logs
     networks:
       - Calcu
   frontend:
@@ -39,6 +41,7 @@ services:
       - Calcu
 volumes:
   schemas: {}
+  logs: {}
 networks:
   Calcu:
     driver: bridge
