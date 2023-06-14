@@ -1,0 +1,11 @@
+CREATE TABLE db_calculadora.Operaciones (
+	Numero1 FLOAT NULL,
+	Numero2 FLOAT NULL,
+	Operacion varchar(50) NULL,
+	Resultado FLOAT NULL,
+	FechaHora TIMESTAMP DEFAULT CURRENT_TIMESTAMP NULL
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_0900_ai_ci
+AUTO_INCREMENT=1;
